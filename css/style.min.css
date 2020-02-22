@@ -1,0 +1,30 @@
+.carousel,.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item,.view,body,html{height:100%}.navbar{background-color:rgba(0,0,0,.2)}.page-footer,.top-nav-collapse{background-color:#1C2331}@media only screen and (max-width:768px){.navbar{background-color:#1C2331}}
+
+.intro-2 {
+    background: url("../img/cosmos-1845140_1920.jpg")no-repeat center center;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.top-nav-collapse {
+    background-color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #000;
+    }
+}
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+
+.github-card .header {
+    background-image: url('../img/code.jpg') !important;
+}
