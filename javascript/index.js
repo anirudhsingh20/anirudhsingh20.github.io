@@ -28,3 +28,13 @@
 
 // // Listen for scroll events and trigger the animation function
 // window.addEventListener("scroll", animateOnScroll);
+
+document.getElementById('resume-download').addEventListener('click', function() {
+    // document.location.href = './files/Resume_Anirudh_Public.pdf';
+    var anchor=document.createElement('a');
+    	anchor.setAttribute('href','./files/Resume_Anirudh_Public.pdf');
+    	anchor.setAttribute('download','');
+    	document.body.appendChild(anchor);
+    	anchor.click();
+    	anchor.parentNode.removeChild(anchor);
+})

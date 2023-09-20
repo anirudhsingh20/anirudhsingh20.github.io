@@ -3,8 +3,60 @@
 * {
   padding: 0;
   margin: 0;
-  background-color: #fffff1;
   box-sizing: border-box;
+}
+
+.pic img {
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+#resume-download {
+  background-color: white;
+  border: 2px solid #663399;
+  color: #663399;
+  border-radius: 15px;
+  padding: 5px 35px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  color: #41235f;
+  flex-direction: column;
+
+  .banner-heading {
+    font-size: 34px;
+    font-weight: 500;
+    color: #663399;
+
+    b {
+      color: #111;
+    }
+  }
+
+  .banner-skill-chips {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 60%;
+    padding-top: 40px;
+
+    .chip {
+      padding: 10px 20px;
+      background-color: #7c3abd;
+      color: white;
+      border: 1px solid #41235f2d;
+      border-radius: 20px;
+      margin: 5px 12px;
+      font-weight: 500;
+      box-shadow: 3px 3px 10px 0px #00000025;
+    }
+  }
 }
 
 header {
@@ -19,7 +71,7 @@ header {
     height: 100%;
     margin-left: auto;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     .link {
       margin: 10px;
@@ -30,9 +82,9 @@ header {
       font-family: Arial, Helvetica, sans-serif;
     }
     .link:hover {
-        transform: scale(1.05);
-        transition: ease-in-out;
-        color: #000;
+      transform: scale(1.05);
+      transition: ease-in-out;
+      color: #000;
     }
   }
 }
@@ -45,30 +97,25 @@ nav {
   padding: 20px;
 }
 
-.banner {
-  height: 65vh;
-  display: flex;
-  justify-content: space-around;
-  background-color: rgb(2, 15, 31);
-  .banner-right {
-    margin: auto;
-  }
+.p-5 {
+  padding: 40px;
 }
 
-.banner .banner-right .profile-pic-div {
-  background-color: rgb(2, 15, 31);
-  position: relative;
+.pb-3 {
+  padding-bottom: 20px;
 }
 
-.banner .banner-right .profile-pic-div img {
-  width: 360px;
-  border-radius: 50%;
-  box-shadow: 1px 3px 8px 6px #000;
+.rounded {
+  border-radius: 5px;
+}
+
+.shadow-sm {
+  box-shadow: 18px 17px 11px 3px #33333318;
 }
 
 .blue-text-timeline {
-    color: #2C55D0;
-    background-color: unset;
+  color: #2c55d0;
+  background-color: unset;
 }
 
 .banner {
@@ -119,11 +166,11 @@ nav {
 }
 
 .banner-chips-card-animation {
-    animation-name: circular-motion-right; /* move-name-card; */
-    animation-duration: 1s;
-    animation-delay: 400ms;
-    animation-timing-function: linear;
-    animation-fill-mode: both;
+  animation-name: circular-motion-right; /* move-name-card; */
+  animation-duration: 1s;
+  animation-delay: 400ms;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
 }
 
 .name-card {
@@ -141,11 +188,11 @@ nav {
 }
 
 .name-card-animation {
-    animation-name: circular-motion; /* move-name-card; */
-    animation-duration: 1s;
-    animation-delay: 400ms;
-    animation-timing-function: linear;
-    animation-fill-mode: both;
+  animation-name: circular-motion; /* move-name-card; */
+  animation-duration: 1s;
+  animation-delay: 400ms;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
 }
 
 /* animations */
@@ -213,28 +260,27 @@ xc, yc -> origin 160px, 20px ; r -> radius and theta -> angle in rad.
 }
 
 .timeline-hr {
-    margin: 10px auto;
+  margin: 10px auto;
 }
 
 .d-flex {
-    display: flex;
+  display: flex;
 }
 
 .space-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .pb-1 {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .timeline-list {
-    text-align: justify;
-
+  text-align: justify;
 }
 
 ul.timeline-list li {
-    padding-bottom: 5px;
+  padding-bottom: 5px;
 }
 
 /* job timeline */
